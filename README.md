@@ -8,9 +8,10 @@ This project demonstrates a comprehensive data warehousing and analytics solutio
 ## 🏗️ Data Architecture
 
 The data architecture for this project follows Medallion Architecture **Bronze**, **Silver**, and **Gold** layers:
-![Data Architecture](Docs/Data Architecture.png)
 
-![Data Architecture](Docs/Data Flow.png)
+![Data Architecture](Docs/Data%20Architecture.png)
+
+![Data Flow](Docs/Data%20Flow.png)
 
 Also architecture draw.io files are available to modify. 
 
