@@ -1,0 +1,16 @@
+INSERT INTO silver_erp_PX_CAT_G1V2 (
+	ID,
+	CAT,
+	SUBCAT,
+	MAINTENANCE
+)
+SELECT
+	ID,
+	CAT,
+	SUBCAT,
+	MAINTENANCE
+FROM bronze_erp_PX_CAT_G1V2
+
+
+SELECT *
+FROM silver_erp_PX_CAT_G1V2;

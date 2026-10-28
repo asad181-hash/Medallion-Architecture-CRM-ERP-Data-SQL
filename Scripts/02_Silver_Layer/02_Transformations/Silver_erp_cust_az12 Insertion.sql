@@ -1,0 +1,25 @@
+INSERT INTO silver_erp_CUST_AZ12 (
+	CID,
+	BDATE,
+	GEN
+)
+
+SELECT
+	CASE
+		WHEN CID LIKE 'NAS%' THEN SUBSTRING(CID, 4, LEN(CID))
+		ELSE CID
+	END AS cid,
+	CASE
+		WHEN BDATE > GETDATE() THEN NULL
+		ELSE BDATE
+	END AS bdate,
+	CASE
+		WHEN UPPER(TRIM(GEN)) IN ('F', 'Female') THEN 'Female'
+		WHEN UPPEr(TRIM(GEN)) IN ('M', 'Male') THEN 'Male'
+		ELSE 'n/a'
+	END AS gen
+FROM bronze_erp_CUST_AZ12
+
+
+SELECT *
+FROM silver_erp_CUST_AZ12;
