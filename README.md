@@ -11,6 +11,8 @@ The data architecture for this project follows Medallion Architecture **Bronze**
 
 ![Data Architecture](Docs/Data%20Architecture.png)
 
+## Data Flow/Lineage
+
 ![Data Flow](Docs/Data%20Flow.png)
 
 Also architecture draw.io files are available to modify. 
